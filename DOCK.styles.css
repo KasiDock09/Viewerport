@@ -80,8 +80,10 @@ table {
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
-@media (prefers-color-scheme: dark){
-    background-color: var(--dark-gray)
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: var(--dark-gray);
+    }
 }
 
 
@@ -300,9 +302,26 @@ img{
 
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
+@media only screen and (max-resolution: 80dpi){   
+    img{
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+    } 
+}
+
+@media only screen and (min-resolution: 80dpi) and (max-resolution: 192dpi) {
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 200px;       
+    }
+}
+
 @media only screen and (min-resolution: 192dpi){   
     img{
-        width: 300px;
+        width: 100%;
+        height: auto;
         max-width: 300px;
     } 
 }
