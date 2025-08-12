@@ -305,7 +305,6 @@ img{
 @media only screen and (max-resolution: 80dpi){   
     img{
         width: 100%;
-        height: auto;
         max-width: 500px;
     } 
 }
@@ -313,7 +312,6 @@ img{
 @media only screen and (80dpi <= resolution <= 192dpi) {
     img {
         width: 100%;
-        height: auto;
         max-width: 200px;       
     }
 }
@@ -321,7 +319,6 @@ img{
 @media only screen and (min-resolution: 192dpi){   
     img{
         width: 100%;
-        height: auto;
         max-width: 300px;
     } 
 }
